@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>A* Algorithm in Javascript</title>
+		<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+		<script type="text/javascript" src="lib/jquery/jquery-compressed.js"></script>
+		<script type="text/javascript" src="lib/interface/interface.js"></script>
+		<script type="text/javascript" src="pqueue.js"></script>
+		<script type="text/javascript" src="astar.js"></script>		 
+	</head>
+	<body>
+	<h1>A* <span class="dn">(A Star)</span></h1>
+
+	<p>Drag the green and yellow squares somewhere on the blue area. Click on an empty space to toggle a wall on/off. 
+	Then click "Find path". </p>
+
+	<p><em>Note for IE users</em>: The green and yellow square disappear after you drag them onto the board. 
+	I tried to make it work with IE, but life's to short. Blame Microsoft.</p>
+	
+	<div class="menu">
+		<div class="button" id="findBtn">Find path</div>
+		<div class="button" id="resetBtn">Clear path</div>
+	</div>
+	
+	<div id="agentContainer">
+		<div id="hiro" class="agent"></div>
+		<div id="enemy" class="agent"></div>
+	</div>
+	
+	<div id="container"></div>
+	
+	<div id="footer">
+		Go to the <a href="http://www.haltingproblem.net">Front Page</a>.
+	</div>
+	
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-4070081-1");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>	
+	</body>
+</html>

@@ -1,6 +1,8 @@
 A simple a visualization of the A* algorithm. Written over 2 years
 ago (didn't run on IE back then, but it does now).
 
+http://www.haltingproblem.net/files/astar/
+
 Code licensed under the MIT license, apart from the following:
 
 * jQuery (used for UI) is licensed under the MIT license.
